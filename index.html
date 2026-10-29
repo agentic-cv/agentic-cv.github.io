@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agentic Computer Vision: Hype or Ripe? Workshop, CVPR 2027</title>
+  <meta name="description" content="A CVPR 2027 workshop and debate on whether agentic systems are hype or ripe for computer vision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="topbar">
+    <div class="wrap">
+      <a class="brand" href="#top">Agentic Computer Vision</a>
+      <nav aria-label="Sections">
+        <a href="#introduction">Introduction</a>
+        <a href="#papers">Call for papers</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#organizers">Organizers</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <div class="wrap hero" id="top">
+      <div>
+        <!-- Change this line once the workshop is accepted. -->
+        <p class="venue">Proposed workshop at CVPR 2027</p>
+        <h1>Agentic Computer Vision <span class="q">Hype or Ripe?</span></h1>
+      </div>
+
+      <!-- Hero figure: a balance scale weighing "hype" (a balloon) against "ripe" (a fruit), with the question still open at the pivot. -->
+      <div class="figure">
+        <svg viewBox="40 90 440 256" role="img" aria-label="A balance scale with a balloon labeled hype on one side and a ripe fruit labeled ripe on the other, with a question mark at the pivot.">
+          <!-- stand -->
+          <rect class="stand" x="200" y="326" width="120" height="10" rx="5"/>
+          <rect class="stand" x="254" y="120" width="12" height="210" rx="6"/>
+          <!-- beam, level: the question is still open -->
+          <rect class="beam" x="60" y="112" width="400" height="12" rx="6"/>
+          <circle class="pivot" cx="260" cy="118" r="26"/>
+          <text class="pivot-q" x="260" y="128" text-anchor="middle">?</text>
+          <!-- left pan -->
+          <line class="cord" x1="110" y1="124" x2="70" y2="250"/>
+          <line class="cord" x1="110" y1="124" x2="150" y2="250"/>
+          <path class="pan" d="M52 250 H168 A58 22 0 0 1 110 272 A58 22 0 0 1 52 250 Z"/>
+          <!-- right pan -->
+          <line class="cord" x1="410" y1="124" x2="370" y2="250"/>
+          <line class="cord" x1="410" y1="124" x2="450" y2="250"/>
+          <path class="pan" d="M352 250 H468 A58 22 0 0 1 410 272 A58 22 0 0 1 352 250 Z"/>
+          <!-- hype: a balloon, all air -->
+          <path class="string" d="M110 248 C104 230 118 214 110 196"/>
+          <polygon class="hype" points="104,196 116,196 110,188"/>
+          <ellipse class="hype" cx="110" cy="160" rx="30" ry="36"/>
+          <path class="shine" d="M96 146 Q100 138 108 136"/>
+          <!-- ripe: a fruit, with weight -->
+          <circle class="ripe" cx="410" cy="216" r="34"/>
+          <path class="stem" d="M410 184 Q412 172 420 168"/>
+          <path class="leaf" d="M412 180 Q428 160 446 170 Q432 184 412 180 Z"/>
+          <!-- labels -->
+          <text class="label hype-text" x="110" y="310" text-anchor="middle">hype</text>
+          <text class="label ripe-text" x="410" y="310" text-anchor="middle">ripe</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Key facts -->
+    <div class="wrap">
+      <dl class="facts">
+        <div>
+          <dt>When</dt>
+          <dd>June 20 or 21, 2027 <small>Exact day to be announced</small></dd>
+        </div>
+        <div>
+          <dt>Where</dt>
+          <dd>Seattle, Washington <small>In person, with CVPR 2027</small></dd>
+        </div>
+        <div>
+          <dt>Format</dt>
+          <dd>Talks and debates <small>Full-day program, tentative</small></dd>
+        </div>
+      </dl>
+    </div>
+
+    <!-- 1. Introduction -->
+    <section class="wrap block" id="introduction">
+      <h2>Introduction</h2>
+      <div>
+        <p>Agents arrived in computer vision almost overnight. Give a multimodal model a renderer, a reconstruction pipeline, or a copy of Blender, and it will reconstruct a scene, fit a simulation, or edit a 3D asset without a single task-specific weight. The results are hard to ignore. So are the doubts. Where does the gain come from, the method or the model underneath it? Can anyone reproduce a result built on a model that changes every quarter? What does a benchmark measure once an agent can search for the answer?</p>
+
+        <p>This workshop is a debate, not a showcase. We will put builders and skeptics on the same stage, ask them to argue, and let the audience vote. Three questions set the agenda.</p>
+
+        <ul class="topics">
+          <li><strong>What becomes possible?</strong> Which vision problems, from 3D reconstruction and perception to generation, editing, and simulation, open up when a model can act, look, and try again?</li>
+          <li><strong>What do we risk?</strong> How do we judge novelty, measure progress, and keep results reproducible when the foundation model does most of the work?</li>
+          <li><strong>How should the vision community respond?</strong> What should we work on, how should we review, and what should the next generation of students learn?</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2. Call for papers. Details follow the workshop proposal and are tentative. -->
+    <section class="wrap block" id="papers">
+      <h2>Call for papers</h2>
+      <div>
+        <p>The call for papers will open soon. We invite papers on both sides of the debate.</p>
+        <ul class="topics">
+          <li><strong>Papers that show the opportunity.</strong> Agentic systems that solve computer vision problems such as 3D reconstruction, perception, generation, editing, and simulation, and agents that serve as research tools, for example by running experiments, curating data, or building benchmarks.</li>
+          <li><strong>Papers that show the limits.</strong> Limitations and blind spots of current agents, such as failures of spatial reasoning, weak verification, or high cost, and the risks or adverse impact of agents on the vision research community, such as irreproducible results, benchmark gaming, unclear credit, and strain on reviewing.</li>
+        </ul>
+        <p>Position papers, negative results, and reproduction studies are welcome in both categories.</p>
+        <ul class="topics">
+          <li>We accept short papers of up to 4 pages, excluding references, in the CVPR format.</li>
+          <li>Papers are non-archival and will not appear in the proceedings, so authors can later submit them to archival venues.</li>
+          <li>Recently accepted papers from other venues are welcome for poster presentation.</li>
+          <li>Reviewing is double-blind and runs on OpenReview.</li>
+          <li>Accepted papers are presented in the poster session.</li>
+        </ul>
+
+        <h3>Important dates</h3>
+        <p class="note">All dates are tentative.</p>
+        <table class="schedule dates">
+          <tbody>
+            <tr><td class="what">Call for papers released</td><td class="time">January 25, 2027</td></tr>
+            <tr><td class="what">Paper submission deadline</td><td class="time">March 20, 2027, 23:59 AoE</td></tr>
+            <tr><td class="what">Acceptance notification</td><td class="time">April 20, 2027</td></tr>
+            <tr><td class="what">Camera-ready deadline</td><td class="time">May 15, 2027, 23:59 AoE</td></tr>
+            <tr><td class="what">Workshop</td><td class="time">June 20 or 21, 2027, Seattle</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 3. Tentative schedule, following the workshop proposal -->
+    <section class="wrap block" id="schedule">
+      <h2>Tentative schedule</h2>
+      <div>
+        <p class="note">All times are local Seattle time. Each invited talk is 30 minutes plus 5 minutes of questions. Sessions and timings may change as speakers are confirmed.</p>
+        <table class="schedule">
+          <thead>
+            <tr><th scope="col">Time</th><th scope="col">Session</th></tr>
+          </thead>
+          <tbody>
+            <tr><td class="time">8:50 – 9:00</td><td class="what">Opening remarks</td></tr>
+            <tr class="talk"><td class="time">9:00 – 9:35</td><td class="what">Invited talk 1 <span>What becomes possible?</span></td></tr>
+            <tr class="talk"><td class="time">9:35 – 10:10</td><td class="what">Invited talk 2 <span>What becomes possible?</span></td></tr>
+            <tr class="papers"><td class="time">10:10 – 10:30</td><td class="what">Spotlight talks <span>Papers 1 and 2</span></td></tr>
+            <tr class="pause"><td class="time">10:30 – 11:15</td><td class="what">Coffee break and poster session</td></tr>
+            <tr class="talk"><td class="time">11:15 – 11:50</td><td class="what">Invited talk 3 <span>What do we risk?</span></td></tr>
+            <tr class="talk"><td class="time">11:50 – 12:25</td><td class="what">Invited talk 4 <span>What do we risk?</span></td></tr>
+            <tr class="pause"><td class="time">12:25 – 13:30</td><td class="what">Lunch break</td></tr>
+            <tr class="talk"><td class="time">13:30 – 14:05</td><td class="what">Invited talk 5 <span>How should the community respond?</span></td></tr>
+            <tr class="talk"><td class="time">14:05 – 14:40</td><td class="what">Invited talk 6 <span>How should the community respond?</span></td></tr>
+            <tr class="papers"><td class="time">14:40 – 15:00</td><td class="what">Spotlight talks <span>Papers 3 and 4</span></td></tr>
+            <tr class="pause"><td class="time">15:00 – 15:30</td><td class="what">Coffee break</td></tr>
+            <tr class="panel"><td class="time">15:30 – 17:00</td><td class="what">Debate <span>Agentic computer vision, hype or ripe? Audience votes before and after.</span></td></tr>
+            <tr><td class="time">17:00 – 17:10</td><td class="what">Closing remarks and best paper award</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Speakers (placeholders) -->
+    <section class="wrap block" id="speakers">
+      <h2>Invited speakers</h2>
+      <div>
+        <p>We plan five to six invited talks, about two for each topic, by speakers who hold different views on the question in the title. The talks set up the closing debate. More names will appear here as they are confirmed.</p>
+        <!-- Confirmed speakers. Photos live in images/ and come from each speaker's own homepage. -->
+        <ul class="people">
+          <li>
+            <img class="avatar" src="images/vedaldi.webp" alt="" width="300" height="300" loading="lazy">
+            <h3><a href="https://www.robots.ox.ac.uk/~vedaldi/">Andrea Vedaldi</a> <span>University of Oxford</span></h3>
+            <p>Andrea Vedaldi is Professor of Computer Vision and Machine Learning at the University of Oxford, where he co-leads the Visual Geometry Group (VGG) in the Department of Engineering Science. He is also a Research Scientist and Technical Lead at Meta, working on 3D computer vision and generative AI, and an Amazon Scholar in the Frontier AI and Robotics lab. His research develops computer vision and machine learning methods that interpret the semantic content and the 3D geometry of images and videos with minimal human labeling, with a current focus on spatial intelligence. His honors include a Royal Society Faraday Discovery Fellowship, the IEEE Thomas Huang Memorial Prize, the IEEE Mark Everingham Prize, two CVPR Best Paper Awards, and an ACM Test of Time Award. He is a Fellow of the Royal Academy of Engineering and of ELLIS, and has served as a chair of ECCV.</p>
+          </li>
+          <li>
+            <img class="avatar" src="images/hanocka.webp" alt="" width="300" height="300" loading="lazy">
+            <h3><a href="https://people.cs.uchicago.edu/~ranahanocka/">Rana Hanocka</a> <span>University of Chicago</span></h3>
+            <p>Rana Hanocka is an Assistant Professor of Computer Science at the University of Chicago and the Founder and CEO of Thrixel. She leads 3DL (threedle!), a group of researchers working on 3D, machine learning, and visual computing. She obtained her Ph.D. in 2021 from Tel Aviv University under the supervision of Daniel Cohen-Or and Raja Giryes. Her research builds artificial intelligence for 3D data, spanning computer graphics, machine learning, and computer vision, with the goal of bringing the success of deep learning on structured data to unstructured 3D geometry. Her group developed MeshCNN, a convolutional neural network designed specifically for meshes, and explored learning from the internal data of a single shape for surface reconstruction, geometric texture synthesis, and point cloud consolidation. Her current interests include intertwining human and machine creativity in 3D modeling and animation, learning with less supervision from large shape collections, and making 3D neural networks more interpretable.</p>
+          </li>
+        </ul>
+
+        <h3 class="sub">To be confirmed</h3>
+        <!--
+          To add a speaker, replace one placeholder item with:
+          <li><img class="slot" src="images/NAME.jpg" alt=""> <div><strong>Full Name</strong><span>Affiliation</span></div></li>
+        -->
+        <ul class="speakers">
+          <li><div class="slot"></div><div><strong>To be announced</strong><span>What do we risk?</span></div></li>
+          <li><div class="slot"></div><div><strong>To be announced</strong><span>What do we risk?</span></div></li>
+          <li><div class="slot"></div><div><strong>To be announced</strong><span>How should the community respond?</span></div></li>
+          <li><div class="slot"></div><div><strong>To be announced</strong><span>How should the community respond?</span></div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Organizers and advisors. Photos live in images/ and come from each person's own homepage. -->
+    <section class="wrap block" id="organizers">
+      <h2>Organizers</h2>
+      <div>
+        <ul class="grid">
+          <li>
+            <img class="avatar" src="images/guandao.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://www.guandaoyang.com/">Guandao Yang</a></strong>
+            <span>Assistant Professor</span>
+            <span>UT Austin</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/chen.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://chen-geng.com/">Chen Geng</a></strong>
+            <span>PhD Candidate</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/elliott.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://elliottwu.com/">Elliott (Shangzhe) Wu</a></strong>
+            <span>Assistant Professor</span>
+            <span>University of Cambridge</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/kenny.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://rkjones4.github.io/">R. Kenny Jones</a></strong>
+            <span>Postdoctoral Scholar</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/yining.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://evelinehong.github.io/">Yining Hong</a></strong>
+            <span>Postdoctoral Scholar</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/haven.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://havenfeng.github.io/">Haiwen (Haven) Feng</a></strong>
+            <span>Postdoctoral Scholar</span>
+            <span>UC Berkeley</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/zizhang.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://kyleleey.github.io/">Zizhang Li</a></strong>
+            <span>PhD Student</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/hengyu.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://liuhengyu321.github.io/">Hengyu Liu</a></strong>
+            <span>PhD Student</span>
+            <span>UT Austin</span>
+          </li>
+          <li>
+            <div class="avatar" aria-hidden="true">AF</div>
+            <strong><a href="https://scholar.google.com/citations?user=luv0xMIAAAAJ&amp;hl=en">Alireza Fathi</a></strong>
+            <span>Research Scientist</span>
+            <span>Google DeepMind</span>
+          </li>
+        </ul>
+
+        <h3 class="sub" id="advisors">Advisors</h3>
+        <ul class="grid">
+          <li>
+            <div class="avatar" aria-hidden="true">LG</div>
+            <strong><a href="https://geometry.stanford.edu/members/guibas/">Leonidas Guibas</a></strong>
+            <span>Professor</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/zhang.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://www.cs.sfu.ca/~haoz/">Richard (Hao) Zhang</a></strong>
+            <span>Professor</span>
+            <span>Simon Fraser University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/wu.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://jiajunwu.com/">Jiajun Wu</a></strong>
+            <span>Assistant Professor</span>
+            <span>Stanford University</span>
+          </li>
+          <li>
+            <img class="avatar" src="images/agrawala.webp" alt="" width="300" height="300" loading="lazy">
+            <strong><a href="https://graphics.stanford.edu/~maneesh/">Maneesh Agrawala</a></strong>
+            <span>Professor</span>
+            <span>Stanford University</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>Agentic Computer Vision: Hype or Ripe? A workshop proposed for CVPR 2027 in Seattle.</p>
+      <p>Questions? Contact <a href="https://www.guandaoyang.com/">Guandao Yang</a>.</p>
+    </div>
+  </footer>
+</body>
+</html>
