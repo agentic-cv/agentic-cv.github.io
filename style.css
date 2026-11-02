@@ -182,6 +182,8 @@ h1 .q { display: block; margin-top: 0.12em; font-size: 0.72em; color: var(--oran
 .people h3 { margin: 0; font-size: 1.2rem; line-height: 1.3; }
 .people h3 a { color: var(--ink); }
 .people h3 a:hover { color: var(--orange); }
+/* Keynote tag after a speaker's affiliation. */
+.people h3 em { font-style: normal; font-weight: 600; color: var(--orange); margin-left: 8px; }
 .people h3 span { font-family: var(--body); font-weight: 400; font-size: 0.98rem; color: var(--muted); margin-left: 6px; }
 .people p { margin: 0; grid-column: 2; }
 /* Subheading for a second list inside a section, such as advisors or unconfirmed speakers */
